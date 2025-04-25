@@ -1,0 +1,421 @@
+> func start --verbose
+
+Selected out-of-process host.
+
+                  %%%%%%
+                 %%%%%%
+            @   %%%%%%    @
+          @@   %%%%%%      @@
+       @@@    %%%%%%%%%%%    @@@
+     @@      %%%%%%%%%%        @@
+       @@         %%%%       @@
+         @@      %%%       @@
+           @@    %%      @@
+                %%
+                %
+
+
+Azure Functions Core Tools
+Core Tools Version:       4.0.7030 Commit hash: N/A +bb4c949899cd5659d6bfe8b92cc923453a2e8f88 (64-bit)
+Function Runtime Version: 4.1037.0.23568
+
+[2025-04-25T13:08:46.854Z] Building host: version spec: , startup suppressed: 'False', configuration suppressed: 'False', startup operation id: '12e776c2-2645-4c2b-b7a6-4d323ba34ef2'
+[2025-04-25T13:08:47.119Z] Reading host configuration file '/Users/wilco/Development/gradientedge/OTelNodeSample/host.json'
+[2025-04-25T13:08:47.120Z] Host configuration file read:
+[2025-04-25T13:08:47.120Z] {
+[2025-04-25T13:08:47.120Z]   "version": "2.0",
+[2025-04-25T13:08:47.120Z]   "logging": {
+[2025-04-25T13:08:47.120Z]     "applicationInsights": {
+[2025-04-25T13:08:47.120Z]       "samplingSettings": {
+[2025-04-25T13:08:47.120Z]         "isEnabled": true,
+[2025-04-25T13:08:47.120Z]         "excludedTypes": "Request"
+[2025-04-25T13:08:47.120Z]       }
+[2025-04-25T13:08:47.120Z]     }
+[2025-04-25T13:08:47.120Z]   },
+[2025-04-25T13:08:47.120Z]   "extensionBundle": {
+[2025-04-25T13:08:47.120Z]     "id": "Microsoft.Azure.Functions.ExtensionBundle",
+[2025-04-25T13:08:47.120Z]     "version": "[4.*, 5.0.0)"
+[2025-04-25T13:08:47.120Z]   }
+[2025-04-25T13:08:47.120Z] }
+[2025-04-25T13:08:47.133Z] FUNCTIONS_WORKER_RUNTIME set to node. Skipping WorkerConfig for language: python
+[2025-04-25T13:08:47.142Z] FUNCTIONS_WORKER_RUNTIME set to node. Skipping WorkerConfig for language: java
+[2025-04-25T13:08:47.143Z] FUNCTIONS_WORKER_RUNTIME set to node. Skipping WorkerConfig for language: powershell
+[2025-04-25T13:08:47.149Z] Looking for extension bundle Microsoft.Azure.Functions.ExtensionBundle at /Users/wilco/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle
+[2025-04-25T13:08:47.150Z] Found a matching extension bundle at /Users/wilco/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/4.21.0
+[2025-04-25T13:08:47.152Z] Loading functions metadata
+[2025-04-25T13:08:47.152Z] Worker indexing is enabled
+[2025-04-25T13:08:47.153Z] Fetching metadata for workerRuntime: node
+[2025-04-25T13:08:47.154Z] Reading functions metadata (Worker)
+[2025-04-25T13:08:47.899Z] Worker 83406048-b9d8-4271-a437-12d9ab6c516f connecting on 127.0.0.1:58518
+[2025-04-25T13:08:49.982Z] Worker 83406048-b9d8-4271-a437-12d9ab6c516f received WorkerInitRequest
+-->[2025-04-25T13:08:49.987Z] Loading entry point file "./src/index.mjs"
+[2025-04-25T13:08:50.032Z] HTTP streaming enabled.
+[2025-04-25T13:08:50.032Z] Loaded entry point file "./src/index.mjs"
+[2025-04-25T13:08:50.032Z] Loading entry point file "./src/functions/httpTrigger1.mjs"
+[2025-04-25T13:08:50.127Z] Setting Node.js programming model to "@azure/functions" version "4.7.0"
+[2025-04-25T13:08:50.127Z] Loaded entry point file "./src/functions/httpTrigger1.mjs"
+[2025-04-25T13:08:50.127Z] Auto-assigned port is valid. Port: 58536
+[2025-04-25T13:08:50.172Z] Worker 83406048-b9d8-4271-a437-12d9ab6c516f received FunctionsMetadataRequest
+[2025-04-25T13:08:50.180Z] 1 functions found (Worker)
+[2025-04-25T13:08:50.184Z] 1 functions loaded
+[2025-04-25T13:08:50.185Z] Looking for extension bundle Microsoft.Azure.Functions.ExtensionBundle at /Users/wilco/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle
+[2025-04-25T13:08:50.186Z] Found a matching extension bundle at /Users/wilco/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/4.21.0
+[2025-04-25T13:08:50.186Z] Fetching information on versions of extension bundle Microsoft.Azure.Functions.ExtensionBundle available on https://functionscdn.azureedge.net/public/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/index.json
+[2025-04-25T13:08:50.238Z] Skipping bundle download since it already exists at path /Users/wilco/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/4.21.0
+[2025-04-25T13:08:50.239Z] Loading extension bundle from /Users/wilco/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/4.21.0/bin
+[2025-04-25T13:08:50.239Z] Script Startup resetting load context with base path: '/Users/wilco/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/4.21.0/bin'.
+[2025-04-25T13:08:50.243Z] Reading host configuration file '/Users/wilco/Development/gradientedge/OTelNodeSample/host.json'
+[2025-04-25T13:08:50.248Z] Host configuration file read:
+[2025-04-25T13:08:50.248Z] {
+[2025-04-25T13:08:50.248Z]   "version": "2.0",
+[2025-04-25T13:08:50.248Z]   "logging": {
+[2025-04-25T13:08:50.248Z]     "applicationInsights": {
+[2025-04-25T13:08:50.249Z]       "samplingSettings": {
+[2025-04-25T13:08:50.249Z]         "isEnabled": true,
+[2025-04-25T13:08:50.249Z]         "excludedTypes": "Request"
+[2025-04-25T13:08:50.249Z]       }
+[2025-04-25T13:08:50.249Z]     }
+[2025-04-25T13:08:50.249Z]   },
+[2025-04-25T13:08:50.249Z]   "extensionBundle": {
+[2025-04-25T13:08:50.249Z]     "id": "Microsoft.Azure.Functions.ExtensionBundle",
+[2025-04-25T13:08:50.249Z]     "version": "[4.*, 5.0.0)"
+[2025-04-25T13:08:50.249Z]   }
+[2025-04-25T13:08:50.249Z] }
+[2025-04-25T13:08:50.277Z] Starting host metrics provider.
+[2025-04-25T13:08:50.327Z] FUNCTIONS_WORKER_RUNTIME set to node. Skipping WorkerConfig for language: python
+[2025-04-25T13:08:50.327Z] FUNCTIONS_WORKER_RUNTIME set to node. Skipping WorkerConfig for language: java
+[2025-04-25T13:08:50.328Z] FUNCTIONS_WORKER_RUNTIME set to node. Skipping WorkerConfig for language: powershell
+[2025-04-25T13:08:50.328Z] FUNCTIONS_WORKER_RUNTIME set to node. Skipping WorkerConfig for language: python
+[2025-04-25T13:08:50.329Z] FUNCTIONS_WORKER_RUNTIME set to node. Skipping WorkerConfig for language: java
+[2025-04-25T13:08:50.329Z] FUNCTIONS_WORKER_RUNTIME set to node. Skipping WorkerConfig for language: powershell
+[2025-04-25T13:08:50.352Z] Initializing Warmup Extension.
+[2025-04-25T13:08:50.369Z] Initializing Host. OperationId: '12e776c2-2645-4c2b-b7a6-4d323ba34ef2'.
+[2025-04-25T13:08:50.372Z] Host initialization: ConsecutiveErrors=0, StartupCount=1, OperationId=12e776c2-2645-4c2b-b7a6-4d323ba34ef2
+[2025-04-25T13:08:50.397Z] Debugger listening on ws://127.0.0.1:4001/bc3e13f1-f916-4d33-8410-4785b0ee9a5e
+[2025-04-25T13:08:50.397Z] For help, see: https://nodejs.org/en/docs/inspector
+-->[2025-04-25T13:08:50.397Z] (node:39275) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+[2025-04-25T13:08:50.397Z] --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("%40opentelemetry/instrumentation/hook.mjs", pathToFileURL("./")); register("%40opentelemetry/instrumentation/hook.mjs", pathToFileURL("./"));'
+[2025-04-25T13:08:50.397Z] (Use `node --trace-warnings ...` to show where the warning was created)
+[2025-04-25T13:08:50.397Z] @opentelemetry/api: Registered a global for diag v1.9.0.
+[2025-04-25T13:08:50.398Z] About to set up OTEL
+[2025-04-25T13:08:50.398Z] Completed set up OTEL
+[2025-04-25T13:08:50.399Z] LoggerFilterOptions
+[2025-04-25T13:08:50.399Z] {
+[2025-04-25T13:08:50.399Z]   "MinLevel": "None",
+[2025-04-25T13:08:50.399Z]   "Rules": [
+[2025-04-25T13:08:50.399Z]     {
+[2025-04-25T13:08:50.399Z]       "ProviderName": null,
+[2025-04-25T13:08:50.399Z]       "CategoryName": "Microsoft.Hosting.Lifetime",
+[2025-04-25T13:08:50.399Z]       "LogLevel": "None",
+[2025-04-25T13:08:50.399Z]       "Filter": null
+[2025-04-25T13:08:50.399Z]     },
+[2025-04-25T13:08:50.399Z]     {
+[2025-04-25T13:08:50.399Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2025-04-25T13:08:50.399Z]       "CategoryName": null,
+[2025-04-25T13:08:50.399Z]       "LogLevel": "None",
+[2025-04-25T13:08:50.399Z]       "Filter": null
+[2025-04-25T13:08:50.399Z]     },
+[2025-04-25T13:08:50.399Z]     {
+[2025-04-25T13:08:50.399Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2025-04-25T13:08:50.399Z]       "CategoryName": null,
+[2025-04-25T13:08:50.399Z]       "LogLevel": null,
+[2025-04-25T13:08:50.399Z]       "Filter": "<AddFilter>b__0"
+[2025-04-25T13:08:50.399Z]     },
+[2025-04-25T13:08:50.399Z]     {
+[2025-04-25T13:08:50.399Z]       "ProviderName": null,
+[2025-04-25T13:08:50.399Z]       "CategoryName": null,
+[2025-04-25T13:08:50.399Z]       "LogLevel": null,
+[2025-04-25T13:08:50.399Z]       "Filter": "<AddFilter>b__0"
+[2025-04-25T13:08:50.399Z]     },
+[2025-04-25T13:08:50.399Z]     {
+[2025-04-25T13:08:50.399Z]       "ProviderName": null,
+[2025-04-25T13:08:50.399Z]       "CategoryName": null,
+[2025-04-25T13:08:50.399Z]       "LogLevel": null,
+[2025-04-25T13:08:50.399Z]       "Filter": "<AddFilter>b__0"
+[2025-04-25T13:08:50.399Z]     },
+[2025-04-25T13:08:50.399Z]     {
+[2025-04-25T13:08:50.399Z]       "ProviderName": "OpenTelemetry.Logs.OpenTelemetryLoggerProvider",
+[2025-04-25T13:08:50.399Z]       "CategoryName": "Function.*",
+[2025-04-25T13:08:50.399Z]       "LogLevel": null,
+[2025-04-25T13:08:50.399Z]       "Filter": "<AddFilter>b__0"
+[2025-04-25T13:08:50.399Z]     },
+[2025-04-25T13:08:50.399Z]     {
+[2025-04-25T13:08:50.399Z]       "ProviderName": "OpenTelemetry.Logs.OpenTelemetryLoggerProvider",
+[2025-04-25T13:08:50.399Z]       "CategoryName": "Azure.*",
+[2025-04-25T13:08:50.399Z]       "LogLevel": null,
+[2025-04-25T13:08:50.400Z]       "Filter": "<AddFilter>b__0"
+[2025-04-25T13:08:50.400Z]     },
+[2025-04-25T13:08:50.400Z]     {
+[2025-04-25T13:08:50.400Z]       "ProviderName": "OpenTelemetry.Logs.OpenTelemetryLoggerProvider",
+[2025-04-25T13:08:50.400Z]       "CategoryName": "Host.Results",
+[2025-04-25T13:08:50.400Z]       "LogLevel": null,
+[2025-04-25T13:08:50.400Z]       "Filter": "<AddFilter>b__0"
+[2025-04-25T13:08:50.400Z]     },
+[2025-04-25T13:08:50.400Z]     {
+[2025-04-25T13:08:50.400Z]       "ProviderName": "OpenTelemetry.Logs.OpenTelemetryLoggerProvider",
+[2025-04-25T13:08:50.400Z]       "CategoryName": "Host.Aggregator",
+[2025-04-25T13:08:50.400Z]       "LogLevel": null,
+[2025-04-25T13:08:50.400Z]       "Filter": "<AddFilter>b__0"
+[2025-04-25T13:08:50.400Z]     },
+[2025-04-25T13:08:50.400Z]     {
+[2025-04-25T13:08:50.400Z]       "ProviderName": "OpenTelemetry.Logs.OpenTelemetryLoggerProvider",
+[2025-04-25T13:08:50.400Z]       "CategoryName": "Microsoft.Azure.WebJobs.*",
+[2025-04-25T13:08:50.400Z]       "LogLevel": null,
+[2025-04-25T13:08:50.400Z]       "Filter": "<AddFilter>b__0"
+[2025-04-25T13:08:50.400Z]     },
+[2025-04-25T13:08:50.400Z]     {
+[2025-04-25T13:08:50.400Z]       "ProviderName": "Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider",
+[2025-04-25T13:08:50.400Z]       "CategoryName": null,
+[2025-04-25T13:08:50.400Z]       "LogLevel": "None",
+[2025-04-25T13:08:50.400Z]       "Filter": null
+[2025-04-25T13:08:50.400Z]     },
+[2025-04-25T13:08:50.400Z]     {
+[2025-04-25T13:08:50.400Z]       "ProviderName": "Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider",
+[2025-04-25T13:08:50.400Z]       "CategoryName": null,
+[2025-04-25T13:08:50.400Z]       "LogLevel": null,
+[2025-04-25T13:08:50.400Z]       "Filter": "<AddFilter>b__0"
+[2025-04-25T13:08:50.400Z]     },
+[2025-04-25T13:08:50.400Z]     {
+[2025-04-25T13:08:50.400Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2025-04-25T13:08:50.400Z]       "CategoryName": null,
+[2025-04-25T13:08:50.400Z]       "LogLevel": null,
+[2025-04-25T13:08:50.400Z]       "Filter": "<AddFilter>b__0"
+[2025-04-25T13:08:50.400Z]     }
+[2025-04-25T13:08:50.400Z]   ]
+[2025-04-25T13:08:50.400Z] }
+[2025-04-25T13:08:50.400Z] LoggerFilterOptions
+[2025-04-25T13:08:50.400Z] {
+[2025-04-25T13:08:50.400Z]   "MinLevel": "None",
+[2025-04-25T13:08:50.400Z]   "Rules": [
+[2025-04-25T13:08:50.400Z]     {
+[2025-04-25T13:08:50.400Z]       "ProviderName": null,
+[2025-04-25T13:08:50.400Z]       "CategoryName": "Microsoft.Hosting.Lifetime",
+[2025-04-25T13:08:50.400Z]       "LogLevel": "None",
+[2025-04-25T13:08:50.400Z]       "Filter": null
+[2025-04-25T13:08:50.400Z]     },
+[2025-04-25T13:08:50.400Z]     {
+[2025-04-25T13:08:50.400Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2025-04-25T13:08:50.400Z]       "CategoryName": null,
+[2025-04-25T13:08:50.400Z]       "LogLevel": "None",
+[2025-04-25T13:08:50.400Z]       "Filter": null
+[2025-04-25T13:08:50.400Z]     },
+[2025-04-25T13:08:50.400Z]     {
+[2025-04-25T13:08:50.400Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2025-04-25T13:08:50.400Z]       "CategoryName": null,
+[2025-04-25T13:08:50.400Z]       "LogLevel": null,
+[2025-04-25T13:08:50.400Z]       "Filter": "<AddFilter>b__0"
+[2025-04-25T13:08:50.400Z]     },
+[2025-04-25T13:08:50.400Z]     {
+[2025-04-25T13:08:50.400Z]       "ProviderName": null,
+[2025-04-25T13:08:50.400Z]       "CategoryName": null,
+[2025-04-25T13:08:50.401Z]       "LogLevel": null,
+[2025-04-25T13:08:50.401Z]       "Filter": "<AddFilter>b__0"
+[2025-04-25T13:08:50.401Z]     },
+[2025-04-25T13:08:50.401Z]     {
+[2025-04-25T13:08:50.401Z]       "ProviderName": null,
+[2025-04-25T13:08:50.401Z]       "CategoryName": null,
+[2025-04-25T13:08:50.401Z]       "LogLevel": null,
+[2025-04-25T13:08:50.401Z]       "Filter": "<AddFilter>b__0"
+[2025-04-25T13:08:50.401Z]     },
+[2025-04-25T13:08:50.401Z]     {
+[2025-04-25T13:08:50.401Z]       "ProviderName": "OpenTelemetry.Logs.OpenTelemetryLoggerProvider",
+[2025-04-25T13:08:50.401Z]       "CategoryName": "Function.*",
+[2025-04-25T13:08:50.401Z]       "LogLevel": null,
+[2025-04-25T13:08:50.401Z]       "Filter": "<AddFilter>b__0"
+[2025-04-25T13:08:50.401Z]     },
+[2025-04-25T13:08:50.401Z]     {
+[2025-04-25T13:08:50.401Z]       "ProviderName": "OpenTelemetry.Logs.OpenTelemetryLoggerProvider",
+[2025-04-25T13:08:50.401Z]       "CategoryName": "Azure.*",
+[2025-04-25T13:08:50.401Z]       "LogLevel": null,
+[2025-04-25T13:08:50.401Z]       "Filter": "<AddFilter>b__0"
+[2025-04-25T13:08:50.401Z]     },
+[2025-04-25T13:08:50.401Z]     {
+[2025-04-25T13:08:50.401Z]       "ProviderName": "OpenTelemetry.Logs.OpenTelemetryLoggerProvider",
+[2025-04-25T13:08:50.401Z]       "CategoryName": "Host.Results",
+[2025-04-25T13:08:50.401Z]       "LogLevel": null,
+[2025-04-25T13:08:50.401Z]       "Filter": "<AddFilter>b__0"
+[2025-04-25T13:08:50.401Z]     },
+[2025-04-25T13:08:50.401Z]     {
+[2025-04-25T13:08:50.401Z]       "ProviderName": "OpenTelemetry.Logs.OpenTelemetryLoggerProvider",
+[2025-04-25T13:08:50.401Z]       "CategoryName": "Host.Aggregator",
+[2025-04-25T13:08:50.401Z]       "LogLevel": null,
+[2025-04-25T13:08:50.401Z]       "Filter": "<AddFilter>b__0"
+[2025-04-25T13:08:50.401Z]     },
+[2025-04-25T13:08:50.401Z]     {
+[2025-04-25T13:08:50.401Z]       "ProviderName": "OpenTelemetry.Logs.OpenTelemetryLoggerProvider",
+[2025-04-25T13:08:50.401Z]       "CategoryName": "Microsoft.Azure.WebJobs.*",
+[2025-04-25T13:08:50.401Z]       "LogLevel": null,
+[2025-04-25T13:08:50.401Z]       "Filter": "<AddFilter>b__0"
+[2025-04-25T13:08:50.401Z]     },
+[2025-04-25T13:08:50.401Z]     {
+[2025-04-25T13:08:50.401Z]       "ProviderName": "Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider",
+[2025-04-25T13:08:50.401Z]       "CategoryName": null,
+[2025-04-25T13:08:50.401Z]       "LogLevel": "None",
+[2025-04-25T13:08:50.401Z]       "Filter": null
+[2025-04-25T13:08:50.401Z]     },
+[2025-04-25T13:08:50.401Z]     {
+[2025-04-25T13:08:50.401Z]       "ProviderName": "Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider",
+[2025-04-25T13:08:50.401Z]       "CategoryName": null,
+[2025-04-25T13:08:50.401Z]       "LogLevel": null,
+[2025-04-25T13:08:50.401Z]       "Filter": "<AddFilter>b__0"
+[2025-04-25T13:08:50.401Z]     },
+[2025-04-25T13:08:50.401Z]     {
+[2025-04-25T13:08:50.401Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2025-04-25T13:08:50.401Z]       "CategoryName": null,
+[2025-04-25T13:08:50.401Z]       "LogLevel": null,
+[2025-04-25T13:08:50.401Z]       "Filter": "<AddFilter>b__0"
+[2025-04-25T13:08:50.401Z]     }
+[2025-04-25T13:08:50.401Z]   ]
+[2025-04-25T13:08:50.401Z] }
+[2025-04-25T13:08:50.401Z] LanguageWorkerOptions
+[2025-04-25T13:08:50.401Z] {
+[2025-04-25T13:08:50.401Z]   "WorkerConfigs": [
+[2025-04-25T13:08:50.401Z]     {
+[2025-04-25T13:08:50.401Z]       "Description": {
+[2025-04-25T13:08:50.401Z]         "Language": "node",
+[2025-04-25T13:08:50.401Z]         "DefaultRuntimeName": null,
+[2025-04-25T13:08:50.401Z]         "DefaultRuntimeVersion": null,
+[2025-04-25T13:08:50.401Z]         "SupportedArchitectures": null,
+[2025-04-25T13:08:50.401Z]         "SupportedOperatingSystems": null,
+[2025-04-25T13:08:50.401Z]         "SupportedRuntimeVersions": null,
+[2025-04-25T13:08:50.401Z]         "SanitizeRuntimeVersionRegex": null,
+[2025-04-25T13:08:50.401Z]         "WorkerIndexing": "true",
+[2025-04-25T13:08:50.401Z]         "Extensions": [
+[2025-04-25T13:08:50.401Z]           ".js",
+[2025-04-25T13:08:50.402Z]           ".mjs",
+[2025-04-25T13:08:50.402Z]           ".cjs"
+[2025-04-25T13:08:50.402Z]         ],
+[2025-04-25T13:08:50.402Z]         "UseStdErrorStreamForErrorsOnly": false,
+[2025-04-25T13:08:50.402Z]         "DefaultExecutablePath": "node",
+[2025-04-25T13:08:50.402Z]         "DefaultWorkerPath": "/opt/homebrew/Cellar/azure-functions-core-tools@4/4.0.7030/workers/node/dist/src/nodejsWorker.js",
+[2025-04-25T13:08:50.402Z]         "WorkerDirectory": "/opt/homebrew/Cellar/azure-functions-core-tools@4/4.0.7030/workers/node",
+[2025-04-25T13:08:50.402Z]         "Arguments": [
+[2025-04-25T13:08:50.402Z]           "--inspect=4001",
+[2025-04-25T13:08:50.402Z]           "--enable-source-maps",
+[2025-04-25T13:08:50.402Z]           "--experimental-loader=@opentelemetry/instrumentation/hook.mjs",
+[2025-04-25T13:08:50.402Z]           "--import",
+[2025-04-25T13:08:50.402Z]           "./src/otel.mjs"
+[2025-04-25T13:08:50.402Z]         ],
+[2025-04-25T13:08:50.402Z]         "WorkerArguments": null,
+[2025-04-25T13:08:50.402Z]         "IsDisabled": null
+[2025-04-25T13:08:50.402Z]       },
+[2025-04-25T13:08:50.402Z]       "Arguments": {
+[2025-04-25T13:08:50.402Z]         "ExecutablePath": "node",
+[2025-04-25T13:08:50.402Z]         "ExecutableArguments": [
+[2025-04-25T13:08:50.402Z]           "--inspect=4001",
+[2025-04-25T13:08:50.402Z]           "--enable-source-maps",
+[2025-04-25T13:08:50.402Z]           "--experimental-loader=@opentelemetry/instrumentation/hook.mjs",
+[2025-04-25T13:08:50.402Z]           "--import",
+[2025-04-25T13:08:50.402Z]           "./src/otel.mjs"
+[2025-04-25T13:08:50.402Z]         ],
+[2025-04-25T13:08:50.402Z]         "WorkerPath": "/opt/homebrew/Cellar/azure-functions-core-tools@4/4.0.7030/workers/node/dist/src/nodejsWorker.js",
+[2025-04-25T13:08:50.402Z]         "WorkerArguments": []
+[2025-04-25T13:08:50.402Z]       },
+[2025-04-25T13:08:50.402Z]       "CountOptions": {
+[2025-04-25T13:08:50.402Z]         "SetProcessCountToNumberOfCpuCores": false,
+[2025-04-25T13:08:50.402Z]         "ProcessCount": 1,
+[2025-04-25T13:08:50.402Z]         "MaxProcessCount": 10,
+[2025-04-25T13:08:50.402Z]         "ProcessStartupInterval": "00:00:10",
+[2025-04-25T13:08:50.402Z]         "ProcessStartupTimeout": "00:01:00",
+[2025-04-25T13:08:50.402Z]         "InitializationTimeout": "00:02:00",
+[2025-04-25T13:08:50.402Z]         "EnvironmentReloadTimeout": "00:02:00",
+[2025-04-25T13:08:50.402Z]         "ProcessRestartInterval": "00:00:10",
+[2025-04-25T13:08:50.402Z]         "ProcessShutdownTimeout": "00:00:10"
+[2025-04-25T13:08:50.402Z]       }
+[2025-04-25T13:08:50.402Z]     }
+[2025-04-25T13:08:50.402Z]   ]
+[2025-04-25T13:08:50.402Z] }
+[2025-04-25T13:08:50.402Z] FunctionResultAggregatorOptions
+[2025-04-25T13:08:50.402Z] {
+[2025-04-25T13:08:50.402Z]   "BatchSize": 1000,
+[2025-04-25T13:08:50.402Z]   "FlushTimeout": "00:00:30",
+[2025-04-25T13:08:50.402Z]   "IsEnabled": true
+[2025-04-25T13:08:50.402Z] }
+[2025-04-25T13:08:50.402Z] ConcurrencyOptions
+[2025-04-25T13:08:50.402Z] {
+[2025-04-25T13:08:50.402Z]   "DynamicConcurrencyEnabled": false,
+[2025-04-25T13:08:50.402Z]   "MaximumFunctionConcurrency": 500,
+[2025-04-25T13:08:50.402Z]   "CPUThreshold": 0.8,
+[2025-04-25T13:08:50.402Z]   "SnapshotPersistenceEnabled": true
+[2025-04-25T13:08:50.402Z] }
+[2025-04-25T13:08:50.402Z] SingletonOptions
+[2025-04-25T13:08:50.402Z] {
+[2025-04-25T13:08:50.402Z]   "LockPeriod": "00:00:15",
+[2025-04-25T13:08:50.402Z]   "ListenerLockPeriod": "00:00:15",
+[2025-04-25T13:08:50.402Z]   "LockAcquisitionTimeout": "10675199.02:48:05.4775807",
+[2025-04-25T13:08:50.402Z]   "LockAcquisitionPollingInterval": "00:00:05",
+[2025-04-25T13:08:50.402Z]   "ListenerLockRecoveryPollingInterval": "00:01:00"
+[2025-04-25T13:08:50.402Z] }
+[2025-04-25T13:08:50.402Z] ScaleOptions
+[2025-04-25T13:08:50.402Z] {
+[2025-04-25T13:08:50.402Z]   "ScaleMetricsMaxAge": "00:02:00",
+[2025-04-25T13:08:50.402Z]   "ScaleMetricsSampleInterval": "00:00:10",
+[2025-04-25T13:08:50.402Z]   "MetricsPurgeEnabled": true,
+[2025-04-25T13:08:50.402Z]   "IsTargetScalingEnabled": true,
+[2025-04-25T13:08:50.403Z]   "IsRuntimeScalingEnabled": false
+[2025-04-25T13:08:50.403Z] }
+[2025-04-25T13:08:50.403Z] Starting JobHost
+[2025-04-25T13:08:50.405Z] Starting Host (HostId=wilcosmacstudio-1410346498, InstanceId=a4c2fd93-cca5-410f-a107-14f8f91fc79f, Version=4.1037.0.23568, ProcessId=39251, AppDomainId=1, InDebugMode=False, InDiagnosticMode=False, FunctionsExtensionVersion=(null))
+[2025-04-25T13:08:50.408Z] Loading functions metadata
+[2025-04-25T13:08:50.408Z] Worker indexing is enabled
+[2025-04-25T13:08:50.408Z] Fetching metadata for workerRuntime: node
+[2025-04-25T13:08:50.408Z] Reading functions metadata (Worker)
+[2025-04-25T13:08:50.410Z] Reading functions metadata (Custom)
+[2025-04-25T13:08:50.414Z] 0 functions found (Custom)
+[2025-04-25T13:08:50.415Z] 1 functions loaded
+[2025-04-25T13:08:50.429Z] Generating 1 job function(s)
+[2025-04-25T13:08:50.429Z] Worker process started and initialized.
+[2025-04-25T13:08:50.432Z] Worker 83406048-b9d8-4271-a437-12d9ab6c516f received FunctionLoadRequest
+[2025-04-25T13:08:50.444Z] Found the following functions:
+[2025-04-25T13:08:50.444Z] Host.Functions.httpTrigger1
+[2025-04-25T13:08:50.444Z]
+[2025-04-25T13:08:50.448Z] HttpOptions
+[2025-04-25T13:08:50.448Z] {
+[2025-04-25T13:08:50.448Z]   "DynamicThrottlesEnabled": false,
+[2025-04-25T13:08:50.448Z]   "EnableChunkedRequestBinding": false,
+[2025-04-25T13:08:50.448Z]   "MaxConcurrentRequests": -1,
+[2025-04-25T13:08:50.448Z]   "MaxOutstandingRequests": -1,
+[2025-04-25T13:08:50.448Z]   "RoutePrefix": "api"
+[2025-04-25T13:08:50.448Z] }
+[2025-04-25T13:08:50.448Z] Initializing function HTTP routes
+[2025-04-25T13:08:50.448Z] Mapped function route 'api/httpTrigger1' [GET,POST] to 'httpTrigger1'
+[2025-04-25T13:08:50.448Z]
+[2025-04-25T13:08:50.451Z] Host initialized (42ms)
+[2025-04-25T13:08:50.452Z] Host started (46ms)
+[2025-04-25T13:08:50.452Z] Job host started
+
+Functions:
+
+        httpTrigger1: [GET,POST] http://localhost:7071/api/httpTrigger1
+
+[2025-04-25T13:08:55.402Z] Host lock lease acquired by instance ID '00000000000000000000000054F0A601'.
+[2025-04-25T13:09:18.681Z] Executing HTTP request: {
+[2025-04-25T13:09:18.682Z]   "requestId": "a4d100d7-ab97-4576-a8f8-17215f63a610",
+[2025-04-25T13:09:18.682Z]   "method": "GET",
+[2025-04-25T13:09:18.682Z]   "userAgent": "curl/8.7.1",
+[2025-04-25T13:09:18.682Z]   "uri": "/api/httpTrigger1/"
+[2025-04-25T13:09:18.682Z] }
+[2025-04-25T13:09:18.753Z] Executing 'Functions.httpTrigger1' (Reason='This function was programmatically called via the host APIs.', Id=74f7a9d2-a519-4c69-9204-aa3561d06de0)
+[2025-04-25T13:09:18.786Z] Worker 83406048-b9d8-4271-a437-12d9ab6c516f received FunctionInvocationRequest with invocationId 74f7a9d2-a519-4c69-9204-aa3561d06de0
+[2025-04-25T13:09:18.797Z] Header traceparent- "null"
+[2025-04-25T13:09:18.797Z] Context traceparent- "00-f8334a40bd28b5f5ffe997a9cb125664-5ed2688507660f92-01"
+-->[2025-04-25T13:09:18.797Z] ActiveSpan traceId- "undefined"
+[2025-04-25T13:09:18.797Z] ActiveSpan spanId- "undefined"
+[2025-04-25T13:09:19.017Z] Http function processed request for url "http://localhost:7071/api/httpTrigger1/?name=test"
+[2025-04-25T13:09:19.034Z] Executed 'Functions.httpTrigger1' (Succeeded, Id=74f7a9d2-a519-4c69-9204-aa3561d06de0, Duration=293ms)
+[2025-04-25T13:09:19.041Z] Executed HTTP request: {
+[2025-04-25T13:09:19.041Z]   "requestId": "a4d100d7-ab97-4576-a8f8-17215f63a610",
+[2025-04-25T13:09:19.041Z]   "identities": "",
+[2025-04-25T13:09:19.041Z]   "status": "200",
+[2025-04-25T13:09:19.041Z]   "duration": "359"
+[2025-04-25T13:09:19.045Z] }
+[2025-04-25T13:09:20.379Z] Subscribed to diagnostic source 'Microsoft.Azure.Functions.Host.OpenTelemetry'
+[2025-04-25T13:09:53.415Z] Stopping host...
+[2025-04-25T13:09:53.417Z] Language Worker Process exited. Pid=39275.
+[2025-04-25T13:09:53.417Z] node exited with code 130 (0x82). .
+[2025-04-25T13:09:53.421Z] Stopping JobHost
+[2025-04-25T13:09:53.461Z] Job host stopped
+[2025-04-25T13:09:53.532Z] Host shutdown completed.
+[2025-04-25T13:09:53.534Z] Shutting down language worker channels for runtime:node
+[2025-04-25T13:09:53.536Z] An error occurred initializing the Table Storage Client. We are unable to record diagnostic events, so the diagnostic logging service is being stopped.
+[2025-04-25T13:09:53.537Z] Stopping the flush logs timer.
